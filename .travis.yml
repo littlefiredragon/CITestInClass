@@ -1,0 +1,12 @@
+language: python
+python:
+# - "2.7"
+- "3.3"
+- "3.4"
+# install the dependencies. simplejson not used, this is demonstration
+install:
+- pip install simplejson
+# run tests
+script:
+- python -m unittest unittestExample -v
+- python -m doctest -v DocTestExample.py
